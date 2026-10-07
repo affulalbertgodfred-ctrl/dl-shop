@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>DL SHOP | Cameras &amp; Lenses</title>
+<link href="style.css" rel="stylesheet"/>
+<style>
+/* =========================================
+   DL SHOP POLISH / NAVIGATION
+========================================= */
+section { scroll-margin-top: 82px; }
+.nav-links a { position: relative; padding: 8px 0; }
+.nav-links a::after { content: ""; position: absolute; left: 0; bottom: 0; width: 0; height: 2px; background: #d4af37; transition: width .25s ease; }
+.nav-links a:hover::after, .nav-links a.active::after { width: 100%; }
+.nav-links a.active { color: #b18b18; }
+.camera-card { display:flex; flex-direction:column; }
+.camera-info { flex:1; display:flex; flex-direction:column; }
+.camera-info .product-description, .camera-info > p:not(.camera-type):not(.product-card-tag):not(.camera-price):not(.product-price):not(.camera-availability) { margin-bottom: 8px; }
+.product-specs, .camera-info ul { margin: 10px 0 16px; }
+.product-specs li, .camera-info li { margin-bottom: 3px; }
+.product-whatsapp, .camera-info .button.whatsapp-button { margin-top:auto; }
+.product-price, .camera-price { font-size:24px; font-weight:800; color:#b18b18; margin:14px 0 5px; }
+.product-card-tag { color:#b18b18; font-size:12px; font-weight:700; letter-spacing:2px; margin-bottom:6px; }
+.product-placeholder { min-height:280px; display:flex; align-items:center; justify-content:center; text-align:center; background:linear-gradient(135deg,#f7f7f7,#ededed); color:#777; font-weight:700; letter-spacing:1px; padding:20px; }
+.product-section { padding:110px 8%; }
+.product-section.alt { background:#f7f7f7; }
+.section-heading h2 { letter-spacing:-1px; }
+@media (max-width:768px) {
+  section { scroll-margin-top:70px; }
+  .nav-links.show-menu { animation: menuIn .2s ease; }
+  .product-section { padding:80px 20px; }
+  .product-placeholder { min-height:240px; }
+}
+@keyframes menuIn { from {opacity:0; transform:translateY(-8px)} to {opacity:1; transform:translateY(0)} }
+</style><link href="style.css" rel="stylesheet"/>
+<style>
+/* DL SHOP IMAGE + WHATSAPP FINAL POLISH */
+.camera-gallery { width:100%; }
+.camera-gallery .main-camera-image { width:100%; height:280px; object-fit:contain; display:block; background:#fff; }
+.camera-thumbnails { display:flex; gap:10px; padding:12px 0 4px; overflow-x:auto; }
+.camera-thumbnail { width:68px; height:55px; object-fit:cover; border:2px solid transparent; border-radius:8px; cursor:pointer; flex:0 0 auto; background:#fff; }
+.camera-thumbnail.active { border-color:#d4af37; }
+.product-whatsapp, .camera-info .button.whatsapp-button { width:100% !important; min-height:52px; display:flex !important; align-items:center; justify-content:center; box-sizing:border-box; margin-top:18px !important; background:#25D366 !important; color:#fff !important; font-weight:800 !important; font-size:16px; text-decoration:none !important; border-radius:10px; border:0; padding:14px 18px; transition:transform .2s ease, opacity .2s ease; }
+.product-whatsapp:hover, .camera-info .button.whatsapp-button:hover { transform:translateY(-2px); opacity:.92; }
+.product-placeholder { min-height:280px; }
+@media (max-width:768px) { .camera-gallery .main-camera-image { height:240px; } }
+</style></head>
+<body>
+<!-- =========================
+         HEADER
+    ========================== -->
+<header>
+<nav class="navbar">
+<!-- DL SHOP LOGO -->
+<a class="logo" href="#home">
+<img alt="DL SHOP Logo" src="images/dl-shop-logo.PNG"/>
+</a>
+<!-- WEBSITE MENU -->
+<ul class="nav-links"><li><a href="#home">Home</a></li><li><a href="#cameras">Cameras</a></li><li><a href="#lenses">Lenses</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li></ul>
+<!-- MOBILE MENU BUTTON -->
+<button class="menu-button">
+                ☰
+            </button>
+</nav>
+</header>
+<!-- =========================
+         HOME / HERO
+    ========================== -->
+<section class="hero" id="home">
+<div class="hero-content">
+<p>DL SHOP • CAMERAS &amp; LENSES</p>
+<h1>Find Your Perfect Camera</h1>
+<p>Cameras and lenses for photography, video and content creation.</p>
+<a class="button" href="#cameras">Shop Cameras</a>
+</div>
+</section>
+<!-- =========================
+         CAMERAS
+    ========================== -->
+<section class="cameras" id="cameras">
+<div class="section-heading">
+<p>DL SHOP COLLECTION</p>
+<h2>Cameras</h2>
+<p>Quality cameras ready for your next shoot.</p>
+</div>
+<div class="camera-container">
+<!-- =================================
+                 1. CANON 6D
+            ================================== -->
+<div class="camera-card">
+<div class="camera-gallery">
+<img alt="Canon 6D 99% New" class="main-camera-image" src="images/Canon%206D%20%E2%80%94%2099%25%20New1.jpeg"/>
+<div class="camera-thumbnails">
+<img alt="Canon 6D" class="camera-thumbnail active" onclick="changePicture(this)" src="images/Canon%206D%20%E2%80%94%2099%25%20New1.jpeg"/>
+<img alt="Canon 6D" class="camera-thumbnail" onclick="changePicture(this)" src="images/Canon%206D%20%E2%80%94%2099%25%20New2.jpeg"/>
+<img alt="Canon 6D" class="camera-thumbnail" onclick="changePicture(this)" src="images/Canon%206D%20%E2%80%94%2099%25%20New3.jpeg"/>
+<img alt="Canon 6D" class="camera-thumbnail" onclick="changePicture(this)" src="images/Canon%206D%20%E2%80%94%2099%25%20New4.jpeg"/>
+</div>
+</div>
+<div class="camera-info">
+<p class="camera-type">CANON DSLR</p>
+<h3>
+                        Canon 6D — 99% New
+                    </h3>
+<p class="product-description">Full-frame DSLR with great image quality and low-light performance.</p>
+<ul class="product-specs"><li>20.2MP full-frame</li><li>ISO 100–25,600</li><li>Full HD video</li></ul>
+<p>
+<strong>Best for:</strong>
+                        Portraits, weddings, events,
+                        studio work and video.
+                    </p>
+<!-- PRICE -->
+<p class="camera-price">
+                        GH₵ 5,000
+                    </p>
+<p class="camera-availability">
+                        ● Available
+                    </p>
+<!-- FULL DETAILS -->
+<a class="button whatsapp-button" href="https://wa.me/233559426223?text=Hello%20DL%20SHOP,%20I%20am%20interested%20in%20the%20Canon%206D%20%E2%80%94%2099%25%20New.%20Please%20confirm%20availability." rel="noopener noreferrer" target="_blank">Chat on WhatsApp</a>
+</div>
+</div>
+<!-- =================================
+                 2. CANON 6D MARK II
+            ================================== -->
+<div class="camera-card">
+<div class="camera-gallery">
+<img alt="Canon EOS 6D Mark II" class="main-camera-image" src="images/Canon%206D%20Mark%20II1.jpeg"/>
+<div class="camera-thumbnails">
+<img alt="Canon 6D Mark II" class="camera-thumbnail active" onclick="changePicture(this)" src="images/Canon%206D%20Mark%20II1.jpeg"/>
+<img alt="Canon 6D Mark II" class="camera-thumbnail" onclick="changePicture(this)" src="images/Canon%206D%20Mark%20II2.jpeg"/>
+<img alt="Canon 6D Mark II" class="camera-thumbnail" onclick="changePicture(this)" src="images/Canon%206D%20Mark%20II3.jpeg"/>
+</div>
+</div>
+<div class="camera-info">
+<p class="camera-type">CANON DSLR</p>
+<h3>
+                        Canon EOS 6D Mark II
+                    </h3>
+<p class="product-description">Full-frame DSLR made for portraits, events and everyday professional work.</p>
+<ul class="product-specs"><li>26.2MP full-frame</li><li>45-point AF</li><li>Full HD video</li></ul>
+<p>
+<strong>Best for:</strong>
+
+                        Portraits, weddings, events,
+                        studio photography and content creation.
+
+                    </p>
+<p class="camera-price">
+                        GH₵ 9,500
+                    </p>
+<p class="camera-availability">
+                        ● Available
+                    </p>
+<a class="button whatsapp-button" href="https://wa.me/233559426223?text=Hello%20DL%20SHOP,%20I%20am%20interested%20in%20the%20Canon%20EOS%206D%20Mark%20II.%20Please%20confirm%20availability." rel="noopener noreferrer" target="_blank">Chat on WhatsApp</a>
+</div>
+</div>
+<!-- =================================
+                 3. CANON 5D MARK III
+            ================================== -->
+<div class="camera-card">
+<div class="camera-gallery">
+<img alt="Canon EOS 5D Mark III" class="main-camera-image" src="images/Canon%205D%20Mark%20III1.jpeg"/>
+<div class="camera-thumbnails">
+<img alt="Canon 5D Mark III" class="camera-thumbnail active" onclick="changePicture(this)" src="images/Canon%205D%20Mark%20III1.jpeg"/>
+<img alt="Canon 5D Mark III" class="camera-thumbnail" onclick="changePicture(this)" src="images/Canon%205D%20Mark%20III2.jpeg"/>
+<img alt="Canon 5D Mark III" class="camera-thumbnail" onclick="changePicture(this)" src="images/Canon%205D%20Mark%20III3.jpeg"/>
+</div>
+</div>
+<div class="camera-info">
+<p class="camera-type">CANON DSLR</p>
+<h3>
+                        Canon EOS 5D Mark III
+                    </h3>
+<p class="product-description">Professional full-frame DSLR with dependable autofocus and a rugged body.</p>
+<ul class="product-specs"><li>22.3MP full-frame</li><li>61-point AF</li><li>6fps shooting</li></ul>
+<p>
+<strong>Best for:</strong>
+
+                        Professional photography,
+                        weddings, events, portraits and studio work.
+
+                    </p>
+<p class="camera-price">
+                        GH₵ 6,900
+                    </p>
+<p class="camera-availability">
+                        ● Available
+                    </p>
+<a class="button whatsapp-button" href="https://wa.me/233559426223?text=Hello%20DL%20SHOP,%20I%20am%20interested%20in%20the%20Canon%20EOS%205D%20Mark%20III.%20Please%20confirm%20availability." rel="noopener noreferrer" target="_blank">Chat on WhatsApp</a>
+</div>
+</div>
+<!-- =================================
+                 4. CANON 5D MARK IV
+            ================================== -->
+<div class="camera-card">
+<div class="camera-gallery">
+<img alt="Canon EOS 5D Mark IV" class="main-camera-image" src="images/Canon%205D%20Mark%20IV1.jpeg"/>
+<div class="camera-thumbnails">
+<img alt="Canon 5D Mark IV" class="camera-thumbnail active" onclick="changePicture(this)" src="images/Canon%205D%20Mark%20IV1.jpeg"/>
+<img alt="Canon 5D Mark IV" class="camera-thumbnail" onclick="changePicture(this)" src="images/Canon%205D%20Mark%20IV2.jpeg"/>
+<img alt="Canon 5D Mark IV" class="camera-thumbnail" onclick="changePicture(this)" src="images/Canon%205D%20Mark%20IV3.jpeg"/>
+</div>
+</div>
+<div class="camera-info">
+<p class="camera-type">CANON DSLR</p>
+<h3>
+                        Canon EOS 5D Mark IV
+                    </h3>
+<p class="product-description">Professional DSLR with high resolution, fast autofocus and 4K video.</p>
+<ul class="product-specs"><li>30.4MP full-frame</li><li>61-point AF</li><li>4K video</li></ul>
+<p>
+<strong>Body:</strong>
+
+                        Professional weather-resistant construction.
+
+                    </p>
+<p class="camera-price">
+                        GH₵ 12,500
+                    </p>
+<p class="camera-availability">
+                        ● Available
+                    </p>
+<a class="button whatsapp-button" href="https://wa.me/233559426223?text=Hello%20DL%20SHOP,%20I%20am%20interested%20in%20the%20Canon%20EOS%205D%20Mark%20IV.%20Please%20confirm%20availability." rel="noopener noreferrer" target="_blank">Chat on WhatsApp</a>
+</div>
+</div>
+<!-- =================================
+                 5. CANON G7 X MARK III
+            ================================== -->
+<div class="camera-card">
+<div class="camera-gallery">
+<img alt="Canon G7 X Mark III" class="main-camera-image" src="images/canon-g7x-mark-iii-1.jpeg"/>
+<div class="camera-thumbnails">
+<img alt="Canon G7 X Mark III" class="camera-thumbnail active" onclick="changePicture(this)" src="images/canon-g7x-mark-iii-1.jpeg"/>
+<img alt="Canon G7 X Mark III" class="camera-thumbnail" onclick="changePicture(this)" src="images/canon-g7x-mark-iii-2.jpeg"/>
+<img alt="Canon G7 X Mark III" class="camera-thumbnail" onclick="changePicture(this)" src="images/canon-g7x-mark-iii-3.jpeg"/>
+<img alt="Canon G7 X Mark III" class="camera-thumbnail" onclick="changePicture(this)" src="images/canon-g7x-mark-iii-4.jpeg"/>
+</div>
+</div>
+<div class="camera-info">
+<p class="camera-type">COMPACT CAMERA</p>
+<h3>
+                        Canon G7 X Mark III
+                    </h3>
+<p class="product-description">Pocket-sized camera built for creators, travel and everyday video.</p>
+<ul class="product-specs"><li>20.1MP sensor</li><li>4K video</li><li>Flip-up screen</li></ul>
+<p>
+<strong>Best for:</strong>
+
+                        Vlogging, YouTube, TikTok,
+                        travel, selfies and everyday photography.
+
+                    </p>
+<p class="camera-price">
+                        GH₵ 15,500
+                    </p>
+<p class="camera-availability">
+                        ● Available
+                    </p>
+<a class="button whatsapp-button" href="https://wa.me/233559426223?text=Hello%20DL%20SHOP,%20I%20am%20interested%20in%20the%20Canon%20G7%20X%20Mark%20III.%20Please%20confirm%20availability." rel="noopener noreferrer" target="_blank">Chat on WhatsApp</a>
+</div>
+</div>
+<!-- =================================
+                 6. CANON R6 MARK II
+            ================================== -->
+<div class="camera-card">
+<div class="camera-gallery">
+<img alt="Canon EOS R6 Mark II" class="main-camera-image" src="images/canon-r6-mark-ii-1.jpeg"/>
+<div class="camera-thumbnails">
+<img alt="Canon R6 Mark II" class="camera-thumbnail active" onclick="changePicture(this)" src="images/canon-r6-mark-ii-1.jpeg"/>
+<img alt="Canon R6 Mark II" class="camera-thumbnail" onclick="changePicture(this)" src="images/canon-r6-mark-ii-2.jpeg"/>
+</div>
+</div>
+<div class="camera-info">
+<p class="camera-type">CANON MIRRORLESS</p>
+<h3>
+                        Canon EOS R6 Mark II
+                    </h3>
+<p class="product-description">Fast full-frame mirrorless camera for action, portraits and video.</p>
+<ul class="product-specs"><li>24.2MP full-frame</li><li>40fps electronic</li><li>4K video</li></ul>
+<p>
+<strong>Best for:</strong>
+
+                        Weddings, events, portraits,
+                        sports, wildlife, content creation
+                        and professional video.
+
+                    </p>
+<p class="camera-price">
+                        GH₵ 20,000
+                    </p>
+<p class="camera-availability">
+                        ● Available
+                    </p>
+<a class="button whatsapp-button" href="https://wa.me/233559426223?text=Hello%20DL%20SHOP,%20I%20am%20interested%20in%20the%20Canon%20EOS%20R6%20Mark%20II.%20Please%20confirm%20availability." rel="noopener noreferrer" target="_blank">Chat on WhatsApp</a>
+</div>
+</div>
+<!-- =================================
+                 7. SONY ZV-E10
+            ================================== -->
+<div class="camera-card">
+<div class="camera-gallery">
+<img alt="Sony ZV-E10" class="main-camera-image" src="images/sony-zv-e10-1.jpeg"/>
+<div class="camera-thumbnails">
+<img alt="Sony ZV-E10" class="camera-thumbnail active" onclick="changePicture(this)" src="images/sony-zv-e10-1.jpeg"/>
+<img alt="Sony ZV-E10" class="camera-thumbnail" onclick="changePicture(this)" src="images/sony-zv-e10-2.jpeg"/>
+<img alt="Sony ZV-E10" class="camera-thumbnail" onclick="changePicture(this)" src="images/sony-zv-e10-3.jpeg"/>
+</div>
+</div>
+<div class="camera-info">
+<p class="camera-type">SONY MIRRORLESS</p>
+<h3>
+                        Sony ZV-E10
+                    </h3>
+<p class="product-description">Creator-friendly mirrorless camera for vlogging, photos and video.</p>
+<ul class="product-specs"><li>24.2MP APS-C</li><li>4K video</li><li>Sony E-mount</li></ul>
+<p>
+<strong>Best for:</strong>
+
+                        Vlogging, YouTube, TikTok,
+                        live streaming and content creation.
+
+                    </p>
+<p class="camera-price">
+                        GH₵ 10,000
+                    </p>
+<p class="camera-availability">
+                        ● Available
+                    </p>
+<a class="button whatsapp-button" href="https://wa.me/233559426223?text=Hello%20DL%20SHOP,%20I%20am%20interested%20in%20the%20Sony%20ZV-E10.%20Please%20confirm%20availability." rel="noopener noreferrer" target="_blank">Chat on WhatsApp</a>
+</div>
+</div>
+<!-- =================================
+                 8. SONY ZV-E10 II
+            ================================== -->
+<div class="camera-card">
+<div class="camera-gallery">
+<img alt="Sony ZV-E10 II" class="main-camera-image" src="images/sony-zv-e10-ii-1.jpeg"/>
+<div class="camera-thumbnails">
+<img alt="Sony ZV-E10 II" class="camera-thumbnail active" onclick="changePicture(this)" src="images/sony-zv-e10-ii-1.jpeg"/>
+<img alt="Sony ZV-E10 II" class="camera-thumbnail" onclick="changePicture(this)" src="images/sony-zv-e10-ii-2.jpeg"/>
+</div>
+</div>
+<div class="camera-info">
+<p class="camera-type">SONY MIRRORLESS</p>
+<h3>
+                        Sony ZV-E10 II
+                    </h3>
+<p class="product-description">Modern creator camera with strong autofocus and high-quality video.</p>
+<ul class="product-specs"><li>26MP APS-C</li><li>4K video</li><li>Sony E-mount</li></ul>
+<p>
+<strong>Highlights:</strong>
+
+                        Excellent video quality, strong APS-C
+                        low-light performance, compact body and
+                        a large Sony E-mount lens selection.
+
+                    </p>
+<p class="camera-price">
+                        GH₵ 14,500
+                    </p>
+<p class="camera-availability">
+                        ● Available
+                    </p>
+<a class="button whatsapp-button" href="https://wa.me/233559426223?text=Hello%20DL%20SHOP,%20I%20am%20interested%20in%20the%20Sony%20ZV-E10%20II.%20Please%20confirm%20availability." rel="noopener noreferrer" target="_blank">Chat on WhatsApp</a>
+</div>
+</div>
+<div class="camera-card">
+<div class="camera-gallery"><img alt="Canon EOS R6" class="main-camera-image" src="images/r6-1.jpeg"/><div class="camera-thumbnails"><img alt="Canon EOS R6" class="camera-thumbnail active" onclick="changePicture(this)" src="images/r6-1.jpeg"/><img alt="Canon EOS R6" class="camera-thumbnail" onclick="changePicture(this)" src="images/r6-2.jpeg"/><img alt="Canon EOS R6" class="camera-thumbnail" onclick="changePicture(this)" src="images/r6-3.jpeg"/></div></div>
+<div class="camera-info">
+<p class="product-card-tag">CANON MIRRORLESS</p>
+<h3>Canon EOS R6</h3>
+<p class="product-description">Fast full-frame mirrorless camera for action, low light and video.</p>
+<ul class="product-specs"><li>20.1MP full-frame</li><li>20fps electronic</li><li>4K 60fps</li></ul>
+<p class="product-price">
+                    GH₵ 15,000
+                </p>
+<p class="camera-availability">
+                    ● Available
+                </p>
+<a class="product-whatsapp" href="https://wa.me/233559426223?text=Hello%20DL%20SHOP%2C%20I%20am%20interested%20in%20the%20Canon%20EOS%20R6.%20Please%20confirm%20availability." rel="noopener noreferrer" target="_blank">
+                    Chat on WhatsApp
+                </a>
+</div>
+</div>
+<div class="camera-card">
+<div class="camera-gallery"><img alt="Canon EOS R7" class="main-camera-image" src="images/r7-1.jpeg"/><div class="camera-thumbnails"><img alt="Canon EOS R7" class="camera-thumbnail active" onclick="changePicture(this)" src="images/r7-1.jpeg"/><img alt="Canon EOS R7" class="camera-thumbnail" onclick="changePicture(this)" src="images/r7-2.jpeg"/></div></div>
+<div class="camera-info">
+<p class="product-card-tag">CANON MIRRORLESS</p>
+<h3>Canon EOS R7</h3>
+<p class="product-description">High-resolution APS-C camera made for sports, wildlife and action.</p>
+<ul class="product-specs"><li>32.5MP APS-C</li><li>30fps electronic</li><li>4K 60fps</li></ul>
+<p class="product-price">
+                    GH₵ 15,500
+                </p>
+<p class="camera-availability">
+                    ● Available
+                </p>
+<a class="product-whatsapp" href="https://wa.me/233559426223?text=Hello%20DL%20SHOP%2C%20I%20am%20interested%20in%20the%20Canon%20EOS%20R7.%20Please%20confirm%20availability." rel="noopener noreferrer" target="_blank">
+                    Chat on WhatsApp
+                </a>
+</div>
+</div>
+<div class="camera-card">
+<div class="camera-gallery"><img alt="Sony FX30" class="main-camera-image" src="images/fx30-1.jpeg"/><div class="camera-thumbnails"><img alt="Sony FX30" class="camera-thumbnail active" onclick="changePicture(this)" src="images/fx30-1.jpeg"/><img alt="Sony FX30" class="camera-thumbnail" onclick="changePicture(this)" src="images/fx30-2.jpeg"/><img alt="Sony FX30" class="camera-thumbnail" onclick="changePicture(this)" src="images/fx30-3.jpeg"/></div></div>
+<div class="camera-info">
+<p class="product-card-tag">SONY CINEMA CAMERA</p>
+<h3>Sony FX30</h3>
+<p class="product-description">Compact cinema camera built for filmmaking and professional video.</p>
+<ul class="product-specs"><li>26MP APS-C</li><li>4K 120fps</li><li>5-axis stabilisation</li></ul>
+<p class="product-price">
+                    GH₵ 22,000
+                </p>
+<p class="camera-availability">
+                    ● Available
+                </p>
+<a class="product-whatsapp" href="https://wa.me/233559426223?text=Hello%20DL%20SHOP%2C%20I%20am%20interested%20in%20the%20Sony%20FX30.%20Please%20confirm%20availability." rel="noopener noreferrer" target="_blank">
+                    Chat on WhatsApp
+                </a>
+</div>
+</div>
+<div class="camera-card">
+<div class="camera-gallery"><img alt="Sony FX3" class="main-camera-image" src="images/fx3-1.jpeg"/><div class="camera-thumbnails"><img alt="Sony FX3" class="camera-thumbnail active" onclick="changePicture(this)" src="images/fx3-1.jpeg"/><img alt="Sony FX3" class="camera-thumbnail" onclick="changePicture(this)" src="images/fx3-2.jpeg"/><img alt="Sony FX3" class="camera-thumbnail" onclick="changePicture(this)" src="images/fx3-3.jpeg"/></div></div>
+<div class="camera-info">
+<p class="product-card-tag">SONY CINEMA CAMERA</p>
+<h3>Sony FX3</h3>
+<p class="product-description">Full-frame cinema camera for professional filmmaking and content creation.</p>
+<ul class="product-specs"><li>12.1MP full-frame</li><li>4K 120fps</li><li>5-axis stabilisation</li></ul>
+<p class="product-price">
+                    GH₵ 41,000
+                </p>
+<p class="camera-availability">
+                    ● Available
+                </p>
+<a class="product-whatsapp" href="https://wa.me/233559426223?text=Hello%20DL%20SHOP%2C%20I%20am%20interested%20in%20the%20Sony%20FX3.%20Please%20confirm%20availability." rel="noopener noreferrer" target="_blank">
+                    Chat on WhatsApp
+                </a>
+</div>
+</div>
+<div class="camera-card">
+<div class="camera-gallery"><div class="product-placeholder">Photos coming soon</div></div>
+<div class="camera-info">
+<p class="product-card-tag">SONY MIRRORLESS</p>
+<h3>Sony α7 IV</h3>
+<p class="product-description">Versatile full-frame camera for photography, video and content creation.</p>
+<ul class="product-specs"><li>33MP full-frame</li><li>10fps shooting</li><li>4K 60fps</li></ul>
+<p class="product-price">
+                    GH₵ 25,000
+                </p>
+<p class="camera-availability">
+                    ● Available
+                </p>
+<a class="product-whatsapp" href="https://wa.me/233559426223?text=Hello%20DL%20SHOP%2C%20I%20am%20interested%20in%20the%20Sony%20%CE%B17%20IV.%20Please%20confirm%20availability." rel="noopener noreferrer" target="_blank">
+                    Chat on WhatsApp
+                </a>
+</div>
+</div>
+<div class="camera-card">
+<div class="camera-gallery"><img alt="Canon EOS R8" class="main-camera-image" src="images/r8-1.jpeg"/><div class="camera-thumbnails"><img alt="Canon EOS R8" class="camera-thumbnail active" onclick="changePicture(this)" src="images/r8-1.jpeg"/><img alt="Canon EOS R8" class="camera-thumbnail" onclick="changePicture(this)" src="images/r8-2.jpeg"/><img alt="Canon EOS R8" class="camera-thumbnail" onclick="changePicture(this)" src="images/r8-3.jpeg"/><img alt="Canon EOS R8" class="camera-thumbnail" onclick="changePicture(this)" src="images/r8-4.jpeg"/><img alt="Canon EOS R8" class="camera-thumbnail" onclick="changePicture(this)" src="images/r8-5.jpeg"/></div></div>
+<div class="camera-info">
+<p class="product-card-tag">CANON MIRRORLESS</p>
+<h3>Canon EOS R8</h3>
+<p class="product-description">Lightweight full-frame camera for portraits, travel, events and video.</p>
+<ul class="product-specs"><li>24.2MP full-frame</li><li>40fps electronic</li><li>4K 60fps</li></ul>
+<p class="product-price">
+                    GH₵ 16,000
+                </p>
+<p class="camera-availability">
+                    ● Available
+                </p>
+<a class="product-whatsapp" href="https://wa.me/233559426223?text=Hello%20DL%20SHOP%2C%20I%20am%20interested%20in%20the%20Canon%20EOS%20R8.%20Please%20confirm%20availability." rel="noopener noreferrer" target="_blank">
+                    Chat on WhatsApp
+                </a>
+</div>
+</div>
+</div>
+</section>
+<!-- =========================
+         ABOUT
+    ========================== -->
+<section class="product-section alt" id="lenses">
+<div class="section-heading">
+<p>DL SHOP COLLECTION</p>
+<h2>Lenses</h2>
+<p>Sharp, versatile lenses for every style of shooting.</p>
+</div>
+<div class="camera-container" id="lens-container">
+<div class="camera-card">
+<div class="camera-gallery"><div class="product-placeholder">Photos coming soon</div></div>
+<div class="camera-info">
+<p class="product-card-tag">PRIME LENS</p>
+<h3>50mm f/1.8 Prime Lens</h3>
+<p class="product-description">Bright standard prime lens for portraits, street and low-light shooting.</p>
+<ul class="product-specs"><li>50mm focal length</li><li>f/1.8 aperture</li><li>Prime lens</li></ul>
+<p class="product-price">
+                    GH₵ 2,000
+                </p>
+<p class="camera-availability">
+                    ● Available
+                </p>
+<a class="product-whatsapp" href="https://wa.me/233559426223?text=Hello%20DL%20SHOP%2C%20I%20am%20interested%20in%20the%2050mm%20f/1.8%20Prime%20Lens.%20Please%20confirm%20availability." rel="noopener noreferrer" target="_blank">
+                    Chat on WhatsApp
+                </a>
+</div>
+</div>
+<div class="camera-card">
+<div class="camera-gallery"><img alt="Canon RF 24-105mm F4 L IS USM" class="main-camera-image" src="images/rf24105-1.jpeg"/><div class="camera-thumbnails"><img alt="Canon RF 24-105mm F4 L IS USM" class="camera-thumbnail active" onclick="changePicture(this)" src="images/rf24105-1.jpeg"/><img alt="Canon RF 24-105mm F4 L IS USM" class="camera-thumbnail" onclick="changePicture(this)" src="images/rf24105-2.jpeg"/></div></div>
+<div class="camera-info">
+<p class="product-card-tag">CANON RF LENS</p>
+<h3>Canon RF 24-105mm F4 L IS USM</h3>
+<p class="product-description">Versatile professional zoom for portraits, events, travel and everyday work.</p>
+<ul class="product-specs"><li>24–105mm zoom</li><li>Constant f/4</li><li>Optical IS</li></ul>
+<p class="product-price">
+                    GH₵ 6,000
+                </p>
+<p class="camera-availability">
+                    ● Available
+                </p>
+<a class="product-whatsapp" href="https://wa.me/233559426223?text=Hello%20DL%20SHOP%2C%20I%20am%20interested%20in%20the%20Canon%20RF%2024-105mm%20F4%20L%20IS%20USM.%20Please%20confirm%20availability." rel="noopener noreferrer" target="_blank">
+                    Chat on WhatsApp
+                </a>
+</div>
+</div>
+<div class="camera-card">
+<div class="camera-gallery"><img alt="Canon RF 24-105mm F4 L IS USM" class="main-camera-image" src="images/rf24105-1.jpeg"/><div class="camera-thumbnails"><img alt="Canon RF 24-105mm F4 L IS USM" class="camera-thumbnail active" onclick="changePicture(this)" src="images/rf24105-1.jpeg"/><img alt="Canon RF 24-105mm F4 L IS USM" class="camera-thumbnail" onclick="changePicture(this)" src="images/rf24105-2.jpeg"/></div></div>
+<div class="camera-info">
+<p class="product-card-tag">CANON RF LENS</p>
+<h3>Canon RF 24-105mm F4 L IS USM</h3>
+<p class="product-description">Versatile professional zoom for portraits, events, travel and everyday work.</p>
+<ul class="product-specs"><li>24–105mm zoom</li><li>Constant f/4</li><li>Optical IS</li></ul>
+<p class="product-price">
+                    GH₵ 10,000
+                </p>
+<p class="camera-availability">
+                    ● Available
+                </p>
+<a class="product-whatsapp" href="https://wa.me/233559426223?text=Hello%20DL%20SHOP%2C%20I%20am%20interested%20in%20the%20Canon%20RF%2024-105mm%20F4%20L%20IS%20USM.%20Please%20confirm%20availability." rel="noopener noreferrer" target="_blank">
+                    Chat on WhatsApp
+                </a>
+</div>
+</div>
+<div class="camera-card">
+<div class="camera-gallery"><img alt="Canon EF 24-70mm f/2.8L II USM" class="main-camera-image" src="images/ef2470-1.jpeg"/><div class="camera-thumbnails"><img alt="Canon EF 24-70mm f/2.8L II USM" class="camera-thumbnail active" onclick="changePicture(this)" src="images/ef2470-1.jpeg"/><img alt="Canon EF 24-70mm f/2.8L II USM" class="camera-thumbnail" onclick="changePicture(this)" src="images/ef2470-2.jpeg"/><img alt="Canon EF 24-70mm f/2.8L II USM" class="camera-thumbnail" onclick="changePicture(this)" src="images/ef2470-3.jpeg"/></div></div>
+<div class="camera-info">
+<p class="product-card-tag">CANON EF LENS</p>
+<h3>Canon EF 24-70mm f/2.8L II USM</h3>
+<p class="product-description">Professional standard zoom with a bright f/2.8 aperture.</p>
+<ul class="product-specs"><li>24–70mm zoom</li><li>Constant f/2.8</li><li>Full-frame</li></ul>
+<p class="product-price">
+                    GH₵ 13,800
+                </p>
+<p class="camera-availability">
+                    ● Available
+                </p>
+<a class="product-whatsapp" href="https://wa.me/233559426223?text=Hello%20DL%20SHOP%2C%20I%20am%20interested%20in%20the%20Canon%20EF%2024-70mm%20f/2.8L%20II%20USM.%20Please%20confirm%20availability." rel="noopener noreferrer" target="_blank">
+                    Chat on WhatsApp
+                </a>
+</div>
+</div>
+<div class="camera-card">
+<div class="camera-gallery"><img alt="Sigma 85mm f/1.4 DG HSM Art" class="main-camera-image" src="images/sigma85-1.jpeg"/><div class="camera-thumbnails"><img alt="Sigma 85mm f/1.4 DG HSM Art" class="camera-thumbnail active" onclick="changePicture(this)" src="images/sigma85-1.jpeg"/><img alt="Sigma 85mm f/1.4 DG HSM Art" class="camera-thumbnail" onclick="changePicture(this)" src="images/sigma85-2.jpeg"/></div></div>
+<div class="camera-info">
+<p class="product-card-tag">SIGMA ART LENS</p>
+<h3>Sigma 85mm f/1.4 DG HSM Art</h3>
+<p class="product-description">Premium portrait lens with beautiful background blur and strong low-light performance.</p>
+<ul class="product-specs"><li>85mm focal length</li><li>f/1.4 aperture</li><li>Portrait prime</li></ul>
+<p class="product-price">
+                    GH₵ 10,300
+                </p>
+<p class="camera-availability">
+                    ● Available
+                </p>
+<a class="product-whatsapp" href="https://wa.me/233559426223?text=Hello%20DL%20SHOP%2C%20I%20am%20interested%20in%20the%20Sigma%2085mm%20f/1.4%20DG%20HSM%20Art.%20Please%20confirm%20availability." rel="noopener noreferrer" target="_blank">
+                    Chat on WhatsApp
+                </a>
+</div>
+</div>
+<div class="camera-card">
+<div class="camera-gallery"><img alt="Sigma 35mm F1.4" class="main-camera-image" src="images/sigma35-1.jpeg"/><div class="camera-thumbnails"><img alt="Sigma 35mm F1.4" class="camera-thumbnail active" onclick="changePicture(this)" src="images/sigma35-1.jpeg"/><img alt="Sigma 35mm F1.4" class="camera-thumbnail" onclick="changePicture(this)" src="images/sigma35-2.jpeg"/><img alt="Sigma 35mm F1.4" class="camera-thumbnail" onclick="changePicture(this)" src="images/sigma35-3.jpeg"/></div></div>
+<div class="camera-info">
+<p class="product-card-tag">SIGMA PRIME LENS</p>
+<h3>Sigma 35mm F1.4</h3>
+<p class="product-description">Bright wide-angle prime for portraits, weddings, street and low light.</p>
+<ul class="product-specs"><li>35mm focal length</li><li>f/1.4 aperture</li><li>Full-frame</li></ul>
+<p class="product-price">
+                    GH₵ 5,300
+                </p>
+<p class="camera-availability">
+                    ● Available
+                </p>
+<a class="product-whatsapp" href="https://wa.me/233559426223?text=Hello%20DL%20SHOP%2C%20I%20am%20interested%20in%20the%20Sigma%2035mm%20F1.4.%20Please%20confirm%20availability." rel="noopener noreferrer" target="_blank">
+                    Chat on WhatsApp
+                </a>
+</div>
+</div>
+</div>
+</section>
+<section class="about" id="about">
+<div class="about-content">
+<p>ABOUT DL SHOP</p>
+<h2>About DL SHOP</h2>
+<p>DL SHOP provides quality cameras and lenses for photographers, videographers and content creators.</p>
+<p>Based in Adenta, Ghana. Chat on WhatsApp for current prices and availability.</p>
+</div>
+</section>
+<!-- =========================
+         CONTACT
+    ========================== -->
+<section class="contact" id="contact">
+<div class="section-heading">
+<p>CONTACT DL SHOP</p>
+<h2>Let’s Talk</h2>
+<p>
+                Contact us for prices, availability
+                and more information.
+            </p>
+<p>
+<strong>Location:</strong>
+                Adenta, Ghana
+
+                  |  
+
+                <strong>Open:</strong>
+                7:00 AM – 8:00 PM
+
+            </p>
+<p>
+<strong>Phone / WhatsApp:</strong>
+                055 942 6223
+
+            </p>
+</div>
+<div class="contact-buttons">
+<a class="button" href="https://wa.me/233559426223" rel="noopener noreferrer" target="_blank">
+                WhatsApp
+            </a>
+<a class="button" href="tel:+233559426223">
+                Call Us
+            </a>
+</div>
+</section>
+<!-- =========================
+         FOOTER
+    ========================== -->
+<footer>
+<div class="footer-content">
+<h2>
+                DL SHOP
+            </h2>
+<p>
+                Quality Cameras &amp; Accessories.
+            </p>
+<div class="social-links">
+<a href="https://www.facebook.com/share/1RVnZdHjYF/" rel="noopener noreferrer" target="_blank">
+                    Facebook
+                </a>
+<a href="https://www.instagram.com/dl_shop_01/" rel="noopener noreferrer" target="_blank">
+                    Instagram
+                </a>
+<a href="https://www.tiktok.com/@dl_shop01" rel="noopener noreferrer" target="_blank">
+                    TikTok
+                </a>
+</div>
+</div>
+<p class="copyright">
+            © 2026 DL SHOP. All Rights Reserved.
+        </p>
+</footer>
+<!-- CONNECT JAVASCRIPT -->
+<script src="script.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const links = document.querySelectorAll('.nav-links a');
+    const sections = document.querySelectorAll('section[id]');
+    const menuButton = document.querySelector('.menu-button');
+    const navLinks = document.querySelector('.nav-links');
+
+    links.forEach(link => {
+        link.addEventListener('click', function () {
+            navLinks.classList.remove('show-menu');
+        });
+    });
+
+    window.addEventListener('scroll', function () {
+        let current = 'home';
+        sections.forEach(section => {
+            if (window.scrollY >= section.offsetTop - 140) current = section.id;
+        });
+        links.forEach(link => {
+            link.classList.toggle('active', link.getAttribute('href') === '#' + current);
+        });
+    });
+});
+</script></body>
+</html>
